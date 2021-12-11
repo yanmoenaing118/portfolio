@@ -1,9 +1,14 @@
 $primary-color: #116149;
+$secondary-color: #d8f5ec;
 
 $white: #fff;
 $black: #0000;
 
 $text-color: #23333e;
+
+::-webkit-scrollbar {
+  width: 0;
+}
 
 html {
   scroll-behavior: smooth;

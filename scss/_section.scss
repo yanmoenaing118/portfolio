@@ -4,18 +4,33 @@
   background-size: cover;
 }
 
+.main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
 .section {
   height: 100vh;
   width: 100%;
   padding: 0 3em;
-  //   scroll-snap-align: start;
+  scroll-snap-align: start;
   &_wrapper {
     @include wrapper;
   }
 
+  &_primary {
+    background-color: rgb(50 134 111);
+  }
+
+  &_secondary {
+    background-color: $secondary-color;
+  }
+
   &_projects {
     padding: 4em 0;
-    background-color: rgb(50 134 111);
   }
 
   &_about {
@@ -38,12 +53,45 @@
 }
 
 .projects {
+  padding-right: 16px;
   margin-top: 3em;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: 220px;
   grid-auto-rows: 220px;
   grid-gap: 16px;
+  overflow-y: scroll;
+  max-height: 488px;
+  padding-bottom: 18px;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    // opacity: 0;
+    display: none;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgba($white, 0.6);
+    border-radius: 10px;
+  }
+
+  // /* Handle on hover */
+  // &::-webkit-scrollbar-thumb:hover {
+  //   background: rgba($black, 0.1);
+  // }
 
   .project {
     border: 1px solid #ccc;
@@ -155,6 +203,50 @@
     &_6 {
       background-image: url("./../assets/project-6.png");
       @include adjust-background;
+    }
+  }
+}
+
+.about {
+  margin-top: 3em;
+  display: flex;
+  &_img {
+    width: 90%;
+    max-width: 180px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &_desc {
+    padding: 0 1.2em;
+    padding-left: 4em;
+    line-height: 1.7;
+
+    p {
+      margin-bottom: 1em;
+    }
+
+    & > div {
+      margin-bottom: 1em;
+    }
+  }
+
+  &_certificates {
+    img {
+      margin-right: 0.8em;
+      max-width: 100%;
+      max-width: 180px;
+    }
+  }
+
+  &_skills {
+    img {
+      max-width: 50px;
+      height: auto;
+      margin-right: 1em;
     }
   }
 }

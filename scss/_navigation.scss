@@ -1,0 +1,51 @@
+.floating_nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background-color: rgba(#000, 1);
+  width: 140px;
+  height: 100vh;
+  display: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+
+  &_show {
+    display: block;
+  }
+  ul {
+    width: 100%;
+    // background: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    li {
+      a {
+        padding: 1em;
+
+        display: block;
+        position: relative;
+
+        color: $white;
+        font-size: 1.2rem;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: #fff;
+          transition: all 0.4s ease;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
