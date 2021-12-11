@@ -1,0 +1,160 @@
+@mixin adjust-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  padding: 0 3em;
+  //   scroll-snap-align: start;
+  &_wrapper {
+    @include wrapper;
+  }
+
+  &_projects {
+    padding: 4em 0;
+    background-color: rgb(50 134 111);
+  }
+
+  &_about {
+    padding: 4em 0;
+  }
+
+  &_title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    &--projects {
+      color: $white;
+    }
+
+    &--about {
+      color: $primary-color;
+    }
+  }
+}
+
+.projects {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: 220px;
+  grid-auto-rows: 220px;
+  grid-gap: 16px;
+
+  .project {
+    border: 1px solid #ccc;
+    color: $white;
+
+    &_item {
+      opacity: 0;
+      background-color: white;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s ease;
+      &_title {
+        color: $text-color;
+        // padding: 0.5em 1em;
+        font-size: 1.1rem;
+        position: relative;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 1em;
+        box-shadow: 0 3px 3px rgba($primary-color, 0.1);
+
+        // &::after {
+        //   content: "";
+        //   width: 100%;
+        //   height: 1px;
+        //   background-color: $primary-color;
+        //   position: absolute;
+        //   bottom: -8px;
+        //   left: 0%;
+        // }
+      }
+      &_tools {
+        background-color: #fff;
+        height: calc(100% - (20% + 40px));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & > div {
+          width: 40px;
+          height: 40px;
+          margin: 10px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      &_source {
+        display: flex;
+        width: 100%;
+        height: 20%;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid rgba($primary-color, 0.3);
+
+        a {
+          @include flex-center;
+          width: 50%;
+
+          font-size: 1rem;
+          color: $text-color;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: rgba($primary-color, 0.1);
+          }
+        }
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &_1 {
+      background-image: url("./../assets/project-1.png");
+      @include adjust-background;
+    }
+
+    &_2 {
+      background-image: url("./../assets/project-2.png");
+      @include adjust-background;
+    }
+
+    &_3 {
+      background-image: url("./../assets/project-3.png");
+      @include adjust-background;
+    }
+
+    &_4 {
+      background-image: url("./../assets/project-4.png");
+      @include adjust-background;
+      background-position: center;
+    }
+
+    &_5 {
+      background-image: url("./../assets/project-5.png");
+      @include adjust-background;
+    }
+
+    &_6 {
+      background-image: url("./../assets/project-6.png");
+      @include adjust-background;
+    }
+  }
+}

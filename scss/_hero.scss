@@ -1,0 +1,54 @@
+.hero {
+  //   background-color: $primary-color;
+  height: calc(100vh - 66px);
+  &_wrapper {
+    @include wrapper;
+    height: 100%;
+    position: relative;
+  }
+  &_textbox {
+    // border: 1px solid #ccc;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 5.5vw;
+      color: $text-color;
+      text-align: center;
+
+      div {
+        background-image: linear-gradient(to right, #7ed56f, #28b485);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    }
+
+    p {
+      text-align: center;
+      padding: 1em 0;
+      font-size: 1.6rem;
+      margin-bottom: 2em;
+      color: $text-color;
+    }
+
+    a {
+      padding: 0.6em 1.8em;
+      background-color: lighten($primary-color, 0.6);
+      color: $white;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      text-transform: capitalize;
+
+      &:hover {
+        background-color: $white;
+        border: 1px solid $text-color;
+        color: $text-color;
+      }
+    }
+  }
+}
