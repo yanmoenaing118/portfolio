@@ -1,5 +1,4 @@
 .hero {
-  //   background-color: $primary-color;
   height: calc(100vh - 66px);
   &_wrapper {
     @include wrapper;
@@ -7,7 +6,6 @@
     position: relative;
   }
   &_textbox {
-    // border: 1px solid #ccc;
     width: 100%;
     position: absolute;
     top: 50%;
@@ -25,6 +23,14 @@
         background-image: linear-gradient(to right, #7ed56f, #28b485);
         -webkit-background-clip: text;
         color: transparent;
+
+        animation: animateText 0.1s steps(1000) infinite alternate;
+      }
+      @include respond(tablet) {
+        font-size: 13vw;
+      }
+      @include respond(mobile) {
+        font-size: 12vw;
       }
     }
 
@@ -34,6 +40,7 @@
       font-size: 1.6rem;
       margin-bottom: 2em;
       color: $text-color;
+      font-weight: bold;
     }
 
     a {
@@ -50,5 +57,15 @@
         color: $text-color;
       }
     }
+  }
+}
+
+@keyframes animateText {
+  100% {
+    background-image: linear-gradient(to right, #31eeaf, #2b9c17);
+  }
+
+  100% {
+    background-image: linear-gradient(to right, #28b485, #37aa23);
   }
 }

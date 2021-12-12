@@ -2,15 +2,23 @@
   position: fixed;
   top: 50%;
   left: 0;
-  background-color: rgba(#000, 1);
+  background-color: #0e1b40;
   width: 140px;
   height: 100vh;
   display: none;
   transform: translateY(-50%);
   transition: all 0.3s ease;
+  // display: none;
+
+  @include respond(tablet) {
+    display: none;
+  }
 
   &_show {
     display: block;
+    @include respond(tablet) {
+      display: none;
+    }
   }
   ul {
     width: 100%;
@@ -45,6 +53,46 @@
             width: 100%;
           }
         }
+      }
+    }
+  }
+}
+
+.mobile_nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100vh;
+  background-color: $primary-color;
+  z-index: 1000;
+  transition: all 0.3s ease-in;
+
+  display: flex;
+  align-items: center;
+
+  &_close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    background: none;
+    border: none;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  ul {
+    margin-top: -18%;
+    li {
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 1.2rem;
+        display: block;
+        padding: 1em;
       }
     }
   }

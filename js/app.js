@@ -4,9 +4,23 @@ window.onload = () => {
 
 function start() {
   const main = document.querySelector("main");
+  const mobileMenuCloseBtn = document.querySelector(".mobile_nav_close");
+  const mobileMenu = document.querySelector(".mobile_menu");
+  const mobileNavbar = document.querySelector(".mobile_nav");
   const observer = new IntersectionObserver(observerCallback, {
     threshold: 0.5,
   });
+
+  mobileMenuCloseBtn.addEventListener("click", closeMobileNav);
+  mobileMenu.addEventListener("click", openMobileNav);
+
+  function openMobileNav() {
+    mobileNavbar.style.left = "0%";
+  }
+
+  function closeMobileNav() {
+    mobileNavbar.style.left = "-100%";
+  }
 
   function observerCallback(entries) {
     entries.forEach((entry) => {
@@ -15,21 +29,6 @@ function start() {
       const floatingNavLinks = floatingNav.querySelectorAll(".floating_nav a");
 
       if (entry.isIntersecting) {
-        // if (section.classList.contains("section_primary")) {
-        //   floatingNavLinks.forEach((link) => {
-        //     link.classList.add("color-white");
-        //   });
-        // } else if (section.classList.contains("section_secondary")) {
-        //   floatingNavLinks.forEach((link) => {
-        //     link.classList.add("color-primary");
-        //   });
-        // } else {
-        //   floatingNavLinks.forEach((link) => {
-        //     // link.classList.remove("color-white");
-        //     link.classList.add("color-white");
-        //   });
-        // }
-
         if (!floatingNav.classList.contains(".floating_nav_show")) {
           return floatingNav.classList.add("floating_nav_show");
         }
@@ -40,6 +39,4 @@ function start() {
   }
 
   observer.observe(main);
-
-  //   sections.forEach((section) => observer.observe(section));
 }
