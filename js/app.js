@@ -1,10 +1,6 @@
-window.onload = () => {
-  start();
-};
-
 function start() {
   const main = document.querySelector("main");
-  const mobileMenuCloseBtn = document.querySelector(".mobile_nav_close");
+  const mobileMenuCloseBtn = document.querySelector(".mobile_nav_close img");
   const mobileMenu = document.querySelector(".mobile_menu img");
   const mobileNavbar = document.querySelector(".mobile_nav");
   const observer = new IntersectionObserver(observerCallback, {
@@ -24,9 +20,7 @@ function start() {
 
   function observerCallback(entries) {
     entries.forEach((entry) => {
-      const section = entry.target;
       const floatingNav = document.querySelector(".floating_nav");
-      const floatingNavLinks = floatingNav.querySelectorAll(".floating_nav a");
 
       if (entry.isIntersecting) {
         if (!floatingNav.classList.contains(".floating_nav_show")) {
@@ -40,3 +34,5 @@ function start() {
 
   observer.observe(main);
 }
+
+start();
