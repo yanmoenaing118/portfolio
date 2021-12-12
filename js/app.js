@@ -8,7 +8,7 @@ function start() {
   const mobileMenu = document.querySelector(".mobile_menu");
   const mobileNavbar = document.querySelector(".mobile_nav");
   const observer = new IntersectionObserver(observerCallback, {
-    threshold: 0.5,
+    threshold: 0.1,
   });
 
   mobileMenuCloseBtn.addEventListener("click", closeMobileNav);

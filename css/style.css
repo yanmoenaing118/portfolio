@@ -26,6 +26,11 @@ a {
 body {
   background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .floating_nav {
@@ -176,6 +181,7 @@ body {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   margin-left: 140px;
+  scroll-snap-align: start;
 }
 @media (max-width: 768px) {
   .main {

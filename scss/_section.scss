@@ -11,6 +11,7 @@
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   margin-left: 140px;
+  scroll-snap-align: start;
 
   @include respond(tablet) {
     margin-left: 0;
