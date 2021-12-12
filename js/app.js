@@ -5,7 +5,7 @@ window.onload = () => {
 function start() {
   const main = document.querySelector("main");
   const mobileMenuCloseBtn = document.querySelector(".mobile_nav_close");
-  const mobileMenu = document.querySelector(".mobile_menu");
+  const mobileMenu = document.querySelector(".mobile_menu img");
   const mobileNavbar = document.querySelector(".mobile_nav");
   const observer = new IntersectionObserver(observerCallback, {
     threshold: 0.1,
