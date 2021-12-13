@@ -202,6 +202,25 @@
       background-image: url("./../assets/project-7.png");
       @include adjust-background;
     }
+
+    &_8 {
+      background-image: url("./../assets/project-8.png");
+      @include adjust-background;
+    }
+
+    &_9 {
+      background-image: url("./../assets/project-9.png");
+      @include adjust-background;
+    }
+    &_10 {
+      background-image: url("./../assets/project-10.png");
+      @include adjust-background;
+    }
+
+    &_11 {
+      background-image: url("./../assets/project-11.png");
+      @include adjust-background;
+    }
   }
 }
 

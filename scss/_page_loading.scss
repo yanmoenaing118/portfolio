@@ -1,0 +1,66 @@
+#page_loading {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5000;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+
+  .page_loading_animation {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    animation-name: scaleLoading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    .loading {
+      position: absolute;
+    }
+
+    .rotate {
+      height: 4px;
+      width: 100%;
+      background-color: transparent;
+      transform-origin: center;
+      animation-name: animateRotate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(360);
+
+      &::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: table;
+        background-color: lightgreen;
+        position: relative;
+        left: -4px;
+      }
+    }
+  }
+}
+
+@keyframes animateRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleLoading {
+  to {
+    transform: scale(1.1);
+  }
+}

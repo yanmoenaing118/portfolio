@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+  document.getElementById("page_loading").style.display = "none";
+});
+
 function start() {
   const main = document.querySelector("main");
   const mobileMenuCloseBtn = document.querySelector(".mobile_nav_close img");
