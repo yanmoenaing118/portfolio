@@ -170,56 +170,89 @@
     &_1 {
       background-image: url("./../assets/project-1.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-1.png");
+      }
     }
 
     &_2 {
       background-image: url("./../assets/project-2.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-2.png");
+      }
     }
 
     &_3 {
       background-image: url("./../assets/project-3.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-3.png");
+      }
     }
 
     &_4 {
       background-image: url("./../assets/project-4.png");
       @include adjust-background;
       background-position: center;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-4.png");
+      }
     }
 
     &_5 {
       background-image: url("./../assets/project-5.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-5.png");
+      }
     }
 
     &_6 {
       background-image: url("./../assets/project-6.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-6.png");
+      }
     }
 
     &_7 {
       background-image: url("./../assets/project-7.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-7.png");
+      }
     }
 
     &_8 {
       background-image: url("./../assets/project-8.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-8.png");
+      }
     }
 
     &_9 {
       background-image: url("./../assets/project-9.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-9.png");
+      }
     }
     &_10 {
       background-image: url("./../assets/project-10.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-10.png");
+      }
     }
 
     &_11 {
       background-image: url("./../assets/project-11.png");
       @include adjust-background;
+      @include respond(tablet) {
+        background-image: url("./../assets/project-sm-11.png");
+      }
     }
   }
 }
