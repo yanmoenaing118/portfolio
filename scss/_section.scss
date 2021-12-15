@@ -85,9 +85,13 @@
   overflow-y: scroll;
   max-height: 488px;
   padding-bottom: 18px;
+  scrollbar-color: transparent;
+  scrollbar-width: 0px;
 
   &::-webkit-scrollbar {
     width: 0px;
+    scrollbar-color: transparent;
+    scrollbar-width: 0px;
   }
 
   @include respond(mobile) {
@@ -243,7 +247,7 @@
       background-image: url("./../assets/project-10.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-1-sm0.png");
+        background-image: url("./../assets/project-10-sm.png");
       }
     }
 
@@ -251,7 +255,7 @@
       background-image: url("./../assets/project-11.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-1-sm1.png");
+        background-image: url("./../assets/project-11-sm.png");
       }
     }
   }
@@ -326,7 +330,7 @@
   }
 
   &_icon {
-    width: 40px;
+    width: 30px;
     margin-right: 2em;
     height: auto;
     img {
