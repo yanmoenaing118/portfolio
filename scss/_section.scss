@@ -171,7 +171,7 @@
       background-image: url("./../assets/project-1.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-1.png");
+        background-image: url("./../assets/project-1-sm.png");
       }
     }
 
@@ -179,7 +179,7 @@
       background-image: url("./../assets/project-2.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-2.png");
+        background-image: url("./../assets/project-2-sm.png");
       }
     }
 
@@ -187,7 +187,7 @@
       background-image: url("./../assets/project-3.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-3.png");
+        background-image: url("./../assets/project-3-sm.png");
       }
     }
 
@@ -196,7 +196,7 @@
       @include adjust-background;
       background-position: center;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-4.png");
+        background-image: url("./../assets/project-4-sm.png");
       }
     }
 
@@ -204,7 +204,7 @@
       background-image: url("./../assets/project-5.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-5.png");
+        background-image: url("./../assets/project-5-sm.png");
       }
     }
 
@@ -212,7 +212,7 @@
       background-image: url("./../assets/project-6.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-6.png");
+        background-image: url("./../assets/project-6-sm.png");
       }
     }
 
@@ -220,7 +220,7 @@
       background-image: url("./../assets/project-7.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-7.png");
+        background-image: url("./../assets/project-7-sm.png");
       }
     }
 
@@ -228,7 +228,7 @@
       background-image: url("./../assets/project-8.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-8.png");
+        background-image: url("./../assets/project-8-sm.png");
       }
     }
 
@@ -236,14 +236,14 @@
       background-image: url("./../assets/project-9.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-9.png");
+        background-image: url("./../assets/project-9-sm.png");
       }
     }
     &_10 {
       background-image: url("./../assets/project-10.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-10.png");
+        background-image: url("./../assets/project-1-sm0.png");
       }
     }
 
@@ -251,7 +251,7 @@
       background-image: url("./../assets/project-11.png");
       @include adjust-background;
       @include respond(tablet) {
-        background-image: url("./../assets/project-sm-11.png");
+        background-image: url("./../assets/project-1-sm1.png");
       }
     }
   }
