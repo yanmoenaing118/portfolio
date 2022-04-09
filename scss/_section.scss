@@ -5,9 +5,7 @@
 }
 
 .main {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
+
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   margin-left: 140px;
@@ -19,7 +17,6 @@
 }
 
 .section {
-  height: 100vh;
   width: 100%;
   padding: 0 5em;
   scroll-snap-align: start;
@@ -83,7 +80,7 @@
   grid-auto-rows: 220px;
   grid-gap: 8px;
   overflow-y: scroll;
-  max-height: 488px;
+ 
   padding-bottom: 18px;
   scrollbar-color: transparent;
   scrollbar-width: 0px;
@@ -234,7 +231,7 @@
   margin-top: 3em;
   display: flex;
   overflow-y: scroll;
-  max-height: 70vh;
+
 
   @include respond(tablet) {
     flex-direction: column;
