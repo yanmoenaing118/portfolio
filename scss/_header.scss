@@ -11,11 +11,10 @@
   .logo {
     h1 {
       font-weight: bold;
-
       background-image: linear-gradient(to right, #7ed56f, #28b485);
       -webkit-background-clip: text;
       color: transparent;
-      font-family: "Bakbak One", cursive;
+      font-family: 'Lobster', cursive;
       position: relative;
       font-size: 1.45rem;
       &::after {

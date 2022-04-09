@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   background-color: $primary-color;
+  transition: opacity 1.5s ease;
 
   .page_loading_animation {
     width: 88px;

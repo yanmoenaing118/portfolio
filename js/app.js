@@ -1,6 +1,28 @@
-window.addEventListener("load", () => {
+const sequenceAnimation = (delay) => {
+  return new Promise((resolve) => {
+    setTimeout(resolve, delay);
+  });
+};
+
+sequenceAnimation(1000)
+  .then(fadePageLoadingAnimation)
+  .then(() => sequenceAnimation(1000))
+  .then(removePageLoadingEl)
+  .then(MoveUpTextBox);
+
+function fadePageLoadingAnimation() {
+  document.getElementById("page_loading").style.opacity = "0";
+}
+
+function removePageLoadingEl() {
   document.getElementById("page_loading").style.display = "none";
-});
+}
+
+function MoveUpTextBox() {
+  const textbox = document.querySelector(".hero_textbox");
+  textbox.style.transform = "translate(-50%,-54%)";
+  textbox.style.opacity = 1;
+}
 
 function start() {
   const main = document.querySelector("main");
