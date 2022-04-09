@@ -4,7 +4,7 @@ const sequenceAnimation = (delay) => {
   });
 };
 
-sequenceAnimation(1000)
+sequenceAnimation(1500)
   .then(fadePageLoadingAnimation)
   .then(() => sequenceAnimation(1000))
   .then(removePageLoadingEl)

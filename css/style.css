@@ -407,128 +407,72 @@ body {
   opacity: 1;
 }
 .projects .project_1 {
-  background-image: url("./../assets/project-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  .projects .project_1 {
-    background-image: url("./../assets/project-1-sm.png");
-  }
+  background-image: url("./../assets/project-1-sm.png");
 }
 .projects .project_2 {
-  background-image: url("./../assets/project-2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  .projects .project_2 {
-    background-image: url("./../assets/project-2-sm.png");
-  }
+  background-image: url("./../assets/project-2-sm.png");
 }
 .projects .project_3 {
-  background-image: url("./../assets/project-3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  .projects .project_3 {
-    background-image: url("./../assets/project-3-sm.png");
-  }
+  background-image: url("./../assets/project-3-sm.png");
 }
 .projects .project_4 {
-  background-image: url("./../assets/project-4.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-@media (max-width: 768px) {
-  .projects .project_4 {
-    background-image: url("./../assets/project-4-sm.png");
-  }
+  background-image: url("./../assets/project-4-sm.png");
 }
 .projects .project_5 {
-  background-image: url("./../assets/project-5.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  .projects .project_5 {
-    background-image: url("./../assets/project-5-sm.png");
-  }
+  background-image: url("./../assets/project-5-sm.png");
 }
 .projects .project_6 {
-  background-image: url("./../assets/project-6.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  .projects .project_6 {
-    background-image: url("./../assets/project-6-sm.png");
-  }
+  background-image: url("./../assets/project-6-sm.png");
 }
 .projects .project_7 {
-  background-image: url("./../assets/project-7.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  .projects .project_7 {
-    background-image: url("./../assets/project-7-sm.png");
-  }
+  background-image: url("./../assets/project-7-sm.png");
 }
 .projects .project_8 {
-  background-image: url("./../assets/project-8.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  .projects .project_8 {
-    background-image: url("./../assets/project-8-sm.png");
-  }
+  background-image: url("./../assets/project-8-sm.png");
 }
 .projects .project_9 {
-  background-image: url("./../assets/project-9.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  .projects .project_9 {
-    background-image: url("./../assets/project-9-sm.png");
-  }
+  background-image: url("./../assets/project-9-sm.png");
 }
 .projects .project_10 {
-  background-image: url("./../assets/project-10.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  .projects .project_10 {
-    background-image: url("./../assets/project-10-sm.png");
-  }
+  background-image: url("./../assets/project-10-sm.png");
 }
 .projects .project_11 {
-  background-image: url("./../assets/project-11.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url("./../assets/project-11-sm.png");
 }
-@media (max-width: 768px) {
-  .projects .project_11 {
-    background-image: url("./../assets/project-11-sm.png");
-  }
-}
-
 .about {
   margin-top: 3em;
   display: flex;
