@@ -102,9 +102,9 @@ body {
   background-color: #0e1b40;
   width: 160px;
   height: 100vh;
-  display: none;
   transform: translateY(-50%);
   transition: all 0.3s ease;
+  opacity: 0;
 }
 @media (max-width: 768px) {
   .floating_nav {
@@ -112,7 +112,7 @@ body {
   }
 }
 .floating_nav_show {
-  display: block;
+  opacity: 1;
 }
 @media (max-width: 768px) {
   .floating_nav_show {
@@ -349,7 +349,7 @@ body {
 }
 .projects .project_item_title {
   color: #23333e;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   position: relative;
   height: 40px;
   display: flex;

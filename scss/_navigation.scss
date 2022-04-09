@@ -5,16 +5,18 @@
   background-color: #0e1b40;
   width: 160px;
   height: 100vh;
-  display: none;
+  
   transform: translateY(-50%);
   transition: all 0.3s ease;
+  opacity: 0;
 
   @include respond(tablet) {
     display: none;
   }
 
   &_show {
-    display: block;
+    opacity: 1;
+    
     @include respond(tablet) {
       display: none;
     }
