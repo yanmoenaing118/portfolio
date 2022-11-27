@@ -1,550 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/logo.svg" />
 
-    <!-- Primary Meta Tags -->
-    <title>Yan Moe Naing - Web Developer</title>
-    <meta name="title" content="Yan Moe Naing - Web Developer" />
-    <meta
-      name="description"
-      content="I am a passionate developer with over 3 years of experience in developing web applications using Next JS, React JS, Express JS and Mongoose JS. I alsow work with Tailwind and Typescript."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yan Moe Naing</title>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://metatags.io/" />
-    <meta property="og:title" content="Yan Moe Naing - Web Developer" />
-    <meta
-      property="og:description"
-      content="I am a passionate developer with over 3 years of experience in developing web applications using Next JS, React JS, Express JS and Mongoose JS. I alsow work with Tailwind and Typescript."
-    />
-    <meta
-      property="og:image"
-      content="https://yanmoenaing.netlify.app/assets/me.JPG"
-    />
+  <title>Yan Moe Naing - Web Developer</title>
+  <meta name="title" content="Yan Moe Naing - Web Developer" />
+  <meta name="description"
+    content="I am a passionate developer with over 3 years of experience in developing web applications using Next JS, React JS, Express JS and Mongoose JS. I alsow work with Tailwind and Typescript." />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://metatags.io/" />
-    <meta property="twitter:title" content="Yan Moe Naing - Web Developer" />
-    <meta
-      property="twitter:description"
-      content="I am a passionate developer with over 3 years of experience in developing web applications using Next JS, React JS, Express JS and Mongoose JS. I alsow work with Tailwind and Typescript."
-    />
-    <meta
-      property="twitter:image"
-      content="https://yanmoenaing.netlify.app/assets/me.JPG"
-    />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://metatags.io/" />
+  <meta property="og:title" content="Yan Moe Naing - Web Developer" />
+  <meta property="og:description"
+    content="I am a passionate developer with over 3 years of experience in developing web applications using Next JS, React JS, Express JS and Mongoose JS. I alsow work with Tailwind and Typescript." />
+  <meta property="og:image" content="https://yanmoenaing.netlify.app/assets/me.JPG" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div id="page_loading">
-      <div class="page_loading_animation">
-        <div class="loading">loading</div>
-        <div class="rotate"></div>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://metatags.io/" />
+  <meta property="twitter:title" content="Yan Moe Naing - Web Developer" />
+  <meta property="twitter:description"
+    content="I am a passionate developer with over 3 years of experience in developing web applications using Next JS, React JS, Express JS and Mongoose JS. I alsow work with Tailwind and Typescript." />
+  <meta property="twitter:image" content="https://yanmoenaing.netlify.app/assets/me.JPG" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-REEBV9M6Z5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-REEBV9M6Z5');
+</script>
+
+<body>
+  <main>
+    <section class="section section--1">
+      <div class="title">
+        <h1 class="animate__animated" data-index="0">Frontend!Idiot</h1>
       </div>
-    </div>
-    <header id="home" class="header">
-      <div class="header_wrapper">
-        <div class="logo">
-          <h1>DevYMN</h1>
+
+      <div class="introduction">
+        <div class="img">
+          <img src="assets/person.png" alt="Photo of Yan Moe Naing" />
         </div>
-        <button class="mobile_menu">
-          <img src="assets/menu.png" alt="Mobile Menu" />
+        <h2 class="animate__animated animate__jackInTheBox">
+          Hi, I'm Yan Moe Naing.
+        </h2>
+        <p>
+          I design and code beautifully simple things,<br />  and I love what I do.
+
+        </p>
+
+        <button id="contact">Contact Me</button>
+      </div>
+    </section>
+    <section class="section section--2 works-section">
+      <div class="title">
+        <h1 class="animate__animated" data-index="1">Recent!Works</h1>
+      </div>
+
+      <div class="swiper workSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide workSwiper-slide workSwiper-slide-1">
+            <div class="work-card">
+              <div class="work-img">
+                <img src="assets/olive-go.jpg" alt="Olive Go" />
+              </div>
+
+              <div class="work-type">
+                <div class="apptitle">Olive Go - Home Improvement</div>
+                <div class="apptype">( Ecommerce Website )</div>
+              </div>
+
+              <div class="work-desc">
+                Home Improvement Ecommerce website for SeinHinn Group Company.
+              </div>
+
+              <div class="work-read" data-index="0">Read More ...</div>
+            </div>
+          </div>
+          <div class="swiper-slide workSwiper-slide workSwiper-slide-2">
+            <div class="work-card">
+              <div class="work-img">
+                <img src="assets/midas.png" alt="Midascreatives" class="contain" />
+              </div>
+
+              <div class="work-type">
+                <div class="apptitle">Midascreatives</div>
+                <div class="apptype">( Agency Website )</div>
+              </div>
+
+              <div class="work-desc">
+                A beautifully animated website for Midas Creatives Agency.
+              </div>
+
+              <div class="work-read" data-index="1">Read More ...</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide workSwiper-slide workSwiper-slide-3">
+            <div class="work-card">
+              <div class="work-img">
+                <img src="assets/player.ico" alt="Midascreatives" class="contain" />
+              </div>
+
+              <div class="work-type">
+                <div class="apptitle">My Music Player</div>
+                <div class="apptype">( Hobby App )</div>
+              </div>
+
+              <div class="work-desc">
+                A music player with beautifully animated particle effects.
+                Caption is in English.
+              </div>
+
+              <div class="work-read" data-index="2">Read More ...</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide workSwiper-slide workSwiper-slide-4">
+            <div class="work-card">
+              <div class="work-img">
+                <img src="assets/venuslab.svg" alt="Venuslab" class="contain" />
+              </div>
+
+              <div class="work-type">
+                <div class="apptitle">Venus Lab</div>
+                <div class="apptype">( Porfolio Website )</div>
+              </div>
+
+              <div class="work-desc">
+                A beautifully animated website clone of https://venuslab.co/.
+              </div>
+
+              <div class="work-read" data-index="3">Read More ...</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide workSwiper-slide workSwiper-slide-5">
+            <div class="work-card">
+              <div class="work-img">
+                <img src="assets/codepen.svg" alt="Venuslab" class="contain" />
+              </div>
+
+              <div class="work-type">
+                <div class="apptitle">My Pens on CodePen.io</div>
+                <div class="apptype">( Hobby Apps )</div>
+              </div>
+
+              <div class="work-desc">
+                Beautiful pens I created to learn new things.
+              </div>
+
+              <div class="work-read" data-index="4">Read More ...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-actions">
+        <button class="work-actions--prev">
+          <svg width="83" height="18" viewBox="0 0 83 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.989998 9.00001L15.99 17.6603L15.99 0.339752L0.989998 9.00001ZM83 7.5L14.49 7.50001L14.49 10.5L83 10.5L83 7.5Z"
+              fill="#CFCECE" />
+          </svg>
+        </button>
+        <span class="current">1 / 5</span>
+        <button class="work-actions--next">
+          <svg width="83" height="18" viewBox="0 0 83 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M83 9.00001L67.8955 0.523311L68.1067 17.8425L83 9.00001ZM1.01829 11.4999L69.5193 10.6645L69.4827 7.66474L0.981709 8.50011L1.01829 11.4999Z"
+              fill="#CFCECE" />
+          </svg>
         </button>
       </div>
-    </header>
-    <nav class="mobile_nav">
-      <button class="mobile_nav_close">
-        <img src="assets/close-svgrepo-com.svg" alt="close menu" />
-      </button>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <div class="hero_wrapper">
-        <div class="hero_textbox">
-          <h1>
-            My name is
-            <div>Yan Moe Naing</div>
-          </h1>
-          <p>I'm a freelance Web Developer and a creative coder!</p>
+    </section>
+    <section class="section section--3">
+      <div class="title">
+        <h1 class="animate__animated" data-index="2">What!ILearn</h1>
+      </div>
 
-          <a href="#projects">See projects</a>
+      <div class="learn">
+        <div></div>
+        <div class="skills">
+          <div>UI/UX design</div>
+          <div>React, Vue, Svelte</div>
+          <div>Next, Nuxt, SvelteKit</div>
+          <div>Node, Express, MongoDB</div>
+          <div>Unit, Integration, E2E Testing</div>
         </div>
       </div>
+    </section>
+
+    <section class="section section--4">
+      <div class="title">
+        <h1 class="animate__animated" data-index="3">Contact.Me?</h1>
+      </div>
+      <div class="contact">
+        <div class="img">
+          <img src="assets/person.png" alt="Photo of Yan Moe Naing" />
+        </div>
+
+        <h2>Yan Moe Naing</h2>
+
+        <p>ymn.dev.coder@gmail.com</p>
+        <p class="phone">09 768-047-177</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/yan-moe-naing-4454a8228/" target="_blank">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.12 0H0.88C0.39325 0 0 0.39325 0 0.88V21.12C0 21.6067 0.39325 22 0.88 22H21.12C21.6067 22 22 21.6067 22 21.12V0.88C22 0.39325 21.6067 0 21.12 0ZM6.52575 18.7468H3.2615V8.24725H6.52575V18.7468ZM4.895 6.81175C4.5208 6.81175 4.155 6.70079 3.84386 6.49289C3.53272 6.28499 3.29022 5.9895 3.14702 5.64379C3.00382 5.29807 2.96635 4.91765 3.03935 4.55064C3.11236 4.18363 3.29255 3.8465 3.55715 3.5819C3.82176 3.3173 4.15888 3.13711 4.52589 3.0641C4.8929 2.9911 5.27332 3.02857 5.61904 3.17177C5.96475 3.31497 6.26024 3.55747 6.46814 3.86861C6.67604 4.17975 6.787 4.54555 6.787 4.91975C6.78425 5.96475 5.93725 6.81175 4.895 6.81175ZM18.7468 18.7468H15.4852V13.64C15.4852 12.4217 15.4633 10.857 13.7885 10.857C12.0918 10.857 11.8305 12.1825 11.8305 13.552V18.7468H8.57175V8.24725H11.7012V9.68275H11.7452C12.1797 8.85775 13.244 7.986 14.8335 7.986C18.139 7.986 18.7468 10.1612 18.7468 12.9882V18.7468V18.7468Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100073257755270" target="_blank">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.7857 0H1.21428C0.892232 0 0.583375 0.127932 0.355654 0.355654C0.127932 0.583375 0 0.892232 0 1.21428V20.786C8.1025e-05 21.108 0.128049 21.4168 0.355762 21.6445C0.583474 21.8721 0.892284 22 1.21428 22H11.7508V13.4805H8.88372V10.1603H11.7508V7.71161C11.7508 4.86994 13.4863 3.32292 16.0212 3.32292C17.2355 3.32292 18.2789 3.41306 18.5833 3.45369V6.42339L16.8251 6.42431C15.4464 6.42431 15.1797 7.07942 15.1797 8.04069V10.1606H18.4675L18.0394 13.4808H15.1797V22H20.786C21.108 21.9999 21.4168 21.8719 21.6445 21.6442C21.8721 21.4165 22 21.1077 22 20.7857V1.21428C22 0.892232 21.8721 0.583375 21.6443 0.355654C21.4166 0.127932 21.1078 0 20.7857 0V0Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="page-pagination">
+    <div class="page-pagination-bullets">
+      <div>
+        <div class="page-pagination-1 page-pagination-active"></div>
+        <div class="page-pagination-2"></div>
+        <div class="page-pagination-3"></div>
+        <div class="page-pagination-4"></div>
+      </div>
     </div>
-    <main class="main">
-      <nav class="floating_nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <section id="projects" class="section section_projects section_primary">
-        <div class="section_wrapper">
-          <h1 class="section_title section_title--projects">Projects</h1>
-          <div class="projects">
-            <div class="project project_1">
-              <div class="project_item">
-                <div class="project_item_title">Music Player</div>
-                <div class="project_item_tools">
-                  <div>
-                    <img src="assets/sass-icon.png.png" />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a href="https://myplaylist.vercel.app/">visit</a>
-                  <a href="https://github.com/yanmoenaing118/my_music_player">
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project project_2">
-              <div class="project_item">
-                <div class="project_item_title">Drama Heaven</div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a href="https://mydramaslist.vercel.app/">visit</a>
-                  <a
-                    href="https://github.com/yanmoenaing118/mydramas-watch-list"
-                  >
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
+  </div>
 
-            <div class="project project_3">
-              <div class="project_item">
-                <div class="project_item_title">News Blog</div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a href="https://learnnextjs.vercel.app/">visit</a>
-                  <a href="https://github.com/yanmoenaing118/note-nextjs">
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
+  <div class="work-details"></div>
 
-            <div class="project project_4">
-              <div class="project_item">
-                <div class="project_item_title">
-                  Loopstudio (frontend mentor)
-                </div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    />
-                  </div>
-                  <div>
-                    <img src="assets/sass-icon.png.png" />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a
-                    href="https://ymn-fontend-mentor-challenges.netlify.app/loopstudios-landing"
-                    >visit</a
-                  >
-                  <a
-                    href="https://github.com/yanmoenaing118/frontend-mentor-challenges"
-                  >
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project project_5">
-              <div class="project_item">
-                <div class="project_item_title">Sneakers (frontend mentor)</div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    />
-                  </div>
-                  <div>
-                    <img src="assets/sass-icon.png.png" />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a
-                    href="https://ymn-fontend-mentor-challenges.netlify.app/ecommerce-product-page-main"
-                    >visit</a
-                  >
-                  <a
-                    href="https://github.com/yanmoenaing118/frontend-mentor-challenges"
-                  >
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/app.js" type="module"></script>
+  <script src="js/projects.js" type="module"></script>
+</body>
 
-            <div class="project project_6">
-              <div class="project_item">
-                <div class="project_item_title">Tesla Home Page</div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    />
-                  </div>
-                  <div>
-                    <img src="assets/sass-icon.png.png" />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a href="https://cloned-websites.netlify.app/tesla">visit</a>
-                  <a href="https://github.com/yanmoenaing118/websites-cloned">
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project project_7">
-              <div class="project_item">
-                <div class="project_item_title">Blog Website</div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a href="https://nextjs-blog-six-snowy.vercel.app/">visit</a>
-                  <a href="https://github.com/yanmoenaing118/nextjs-blog">
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="project project_8">
-              <div class="project_item">
-                <div class="project_item_title">
-                  Room Home page (frontend mentor)
-                </div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    />
-                  </div>
-                  <div>
-                    <img src="assets/sass-icon.png.png" />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a href="https://ymn-fontend-mentor-challenges.netlify.app/"
-                    >visit</a
-                  >
-                  <a
-                    href="https://github.com/yanmoenaing118/frontend-mentor-challenges"
-                  >
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="project project_9">
-              <div class="project_item">
-                <div class="project_item_title">
-                  The Movie Database Home page
-                </div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    />
-                  </div>
-                  <div>
-                    <img src="assets/sass-icon.png.png" />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a href="https://cloned-websites.netlify.app/themoviedb"
-                    >visit</a
-                  >
-                  <a href="https://github.com/yanmoenaing118/websites-cloned">
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="project project_10">
-              <div class="project_item">
-                <div class="project_item_title">Microsoft Home page</div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    />
-                  </div>
-                  <div>
-                    <img src="assets/sass-icon.png.png" />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a href="https://cloned-websites.netlify.app/microsoft"
-                    >visit</a
-                  >
-                  <a href="https://github.com/yanmoenaing118/websites-cloned">
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="project project_11">
-              <div class="project_item">
-                <div class="project_item_title">Netflix Home page</div>
-                <div class="project_item_tools">
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    />
-                  </div>
-                  <div>
-                    <img src="assets/sass-icon.png.png" />
-                  </div>
-                  <div>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    />
-                  </div>
-                </div>
-                <div class="project_item_source">
-                  <a href="https://cloned-websites.netlify.app/netflix"
-                    >visit</a
-                  >
-                  <a href="https://github.com/yanmoenaing118/websites-cloned">
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section section_secondary section_about">
-        <article class="section_wrapper">
-          <h1 class="section_title section_title--about">About me</h1>
-          <div class="about">
-            <div class="about_img">
-              <img src="assets/me.JPG" alt="Yan Moe Naing" />
-            </div>
-            <div class="about_desc">
-              <p>
-                Hello, I'm Yan Moe Naing. I'm a freelance web developer. I got
-                into the field of Web Development when I was in university. I
-                had realized that my passion is writing computer programs that
-                we love and use daily. I want to bring that passion to you and
-                your organization.
-              </p>
-
-              <div>
-                <h2>Education</h2>
-                <p>
-                  University of Computer Studies, Mandalay (UCSM) - B.Sc
-                  Computer Science (3rd year)
-                </p>
-              </div>
-              <div>
-                <h2>Certificates</h2>
-                <div class="about_certificates">
-                  <img src="assets/certificate-1.png" alt="Node JS" />
-                  <img src="assets/certificate-2.png" alt="English" />
-                  <img src="assets/certificate-3.png" alt="M001" />
-                </div>
-              </div>
-              <div>
-                <h2>Skills</h2>
-                <div class="about_skills">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section id="contact" class="section section_contact">
-        <div class="section_wrapper">
-          <h1 class="section_title">Contact</h1>
-          <div class="contact">
-            <div class="contact_wrapper">
-              <div class="contact_item">
-                <div class="contact_icon">
-                  <img src="assets/viber.png" alt="Phone contact" />
-                </div>
-                <div class="contact_address">
-                  <a href="tel:+959768047177">+959768047177</a>
-                </div>
-              </div>
-
-              <div class="contact_item">
-                <div class="contact_icon">
-                  <img src="assets/email.png" alt="Email contact" />
-                </div>
-                <div class="contact_address">
-                  <a href="mailto:ymn.dev.coder@gmail.com"
-                    >ymn.dev.coder@gmail.com</a
-                  >
-                </div>
-              </div>
-
-              <div class="contact_item">
-                <div class="contact_icon">
-                  <img src="assets/linkedin-logo.png" alt="Linkedin contact" />
-                </div>
-                <div class="contact_address">
-                  <a href="https://www.linkedin.com/in/yan-moe-naing-4454a8228/"
-                    >yan-moe-naing-4454a8228</a
-                  >
-                </div>
-              </div>
-
-              <div class="contact_item">
-                <div class="contact_icon">
-                  <img src="assets/github-sign.png" alt="GitHub contact" />
-                </div>
-                <div class="contact_address">
-                  <a href="https://github.com/yanmoenaing118/"
-                    >yanmoenaing118</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="js/app.js"></script>
-  </body>
 </html>

@@ -1,0 +1,31 @@
+.learn {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills {
+    padding-right: 4rem;
+    & > div {
+        font-size: 3.4rem;
+        font-family: 'Oleo Script', cursive;
+        text-align: right;
+        color: var(--gray-400);
+
+        @include respond(tablet){ 
+            font-size:2.5rem;
+        }
+
+        @include respond(mobile) {
+            font-size: 1.8rem;
+        }
+    }
+
+    @include respond(tablet ){
+    padding-right: var(--margin);
+    }
+}

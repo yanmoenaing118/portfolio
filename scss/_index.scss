@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@500&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Oleo+Script&family=Satisfy&display=swap');
 
+:root {
+  --max-width: 1200px;
+  --page-bg-color: #edf1f2;
+  --color-primary: #45C476;
 
-$primary-color: #116149;
-$secondary-color: #d8f5ec;
+  --radius-1: 3px;
+  --margin: 18px;
 
-$white: #fff;
-$black: #0000;
-
-$text-color: #23333e;
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
-html {
-  scroll-behavior: smooth;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-700: #374151;
+  --gray-900: #111827;
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 ul,
@@ -34,13 +35,23 @@ a {
   text-decoration: none;
 }
 
+html,
 body {
-  background-color: $white;
-  font-family: 'Poppins', sans-serif;;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--page-bg-color);
+  font-family: 'Lato', sans-serif;
 
 }
+
+button {
+  border: none;
+  background: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+

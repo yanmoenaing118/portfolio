@@ -1,10 +1,7 @@
-@mixin wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@mixin flex-center($dir) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+    justify-content: center;
+  }
+  
