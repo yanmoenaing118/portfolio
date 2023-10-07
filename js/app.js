@@ -15,7 +15,7 @@ bulletThree.addEventListener("click", () => scrollToSection(".section--3"));
 
 bulletFour.addEventListener("click", () => scrollToSection(".section--4"));
 
-contactBtn.addEventListener("click", () => scrollToSection(".section--4"));
+contactBtn.addEventListener("click", () => scrollToSection(".section--2"));
 
 function scrollToSection(className) {
   const el = document.querySelector(className);
@@ -51,11 +51,12 @@ const prevWork = worksSection.querySelector(".work-actions--prev");
 const nextWork = worksSection.querySelector(".work-actions--next");
 const currentWork = worksSection.querySelector(".current");
 
+const totalProjects = 6;
 prevWork.style.opacity = 0;
-currentWork.textContent = "1 / 5";
+currentWork.textContent = "1 / 6";
 
 works.on("slideChange", function () {
-  currentWork.textContent = `${this.activeIndex + 1} / 5`;
+  currentWork.textContent = `${this.activeIndex + 1} / ${totalProjects}`;
   if (this.activeIndex > 0) {
     prevWork.style.opacity = 1;
   } else {
@@ -67,7 +68,7 @@ works.on("slideChange", function () {
   } else {
     nextWork.style.opacity = 1;
   }
-  [1, 2, 3, 4, 5].forEach((index) => {
+  [1, 2, 3, 4, 5,6].forEach((index) => {
     const el = document.querySelector(`.workSwiper-slide-${index}`);
     if (index - 1 !== this.activeIndex) {
       el.style.opacity = 0.65;
@@ -79,7 +80,7 @@ works.on("slideChange", function () {
   });
 });
 
-[1, 2, 3, 4, 5].forEach((index) => {
+[1, 2, 3, 4, 5,6].forEach((index) => {
   if (index - 1 !== works.activeIndex) {
     const el = document.querySelector(`.workSwiper-slide-${index}`);
     el.style.transform = "scale(0.8)";

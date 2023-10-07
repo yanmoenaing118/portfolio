@@ -1,5 +1,22 @@
 const projects = [
   {
+    logo: "yomabank.png",
+    projectName: "Yoma Bank - NextGen Banking Web Portal",
+    projectLink: "https://nextportal.yomabank.com/",
+    projectBrief: `
+    Yoma Bank's users will be able to access thier bank accounts' information and see their daily transactions. They can transfer money between Yoma Accounts, Other Accounts and Transfer to other Banks. They can easily open Fixed Deposit and Flexi Accounts without going to banks.
+    `,
+    techBrief: `Angular, RxJS, BootStrap`,
+    approaches: [
+      `
+      I implemented core features such as Account Activation for new users, Transfer money between Yoma accounts / Other accounts ,Other Bank Transfers, Flexi Account Opening / Fixed Deposit - SuperFixed Deposit Account Opening
+      `,
+      `
+      I implemented a multi-step dynamic form with different fields fetched from the API to accept payments for third party Billers such as YESC,Mahar Net,Mobile Legend, PUBG  etc…
+      `,
+    ],
+  },
+  {
     logo: "olive-go.jpg",
     projectName: "Olive Go - Home Improvement",
     projectLink: "https://olivego.com/",
