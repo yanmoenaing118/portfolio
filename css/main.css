@@ -371,14 +371,12 @@ main {
   justify-content: space-between;
   opacity: 0;
   transition: all 0.3 ease;
+  opacity: 1;
+  bottom: 50px;
 }
 .work-actions span {
   color: var(--gray-400);
   font-size: 1.5rem;
-}
-.work-actions.show {
-  opacity: 1;
-  bottom: 50px;
 }
 .work-actions button {
   cursor: pointer;

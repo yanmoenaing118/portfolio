@@ -12,7 +12,7 @@
     }
   }
 
-  @include respond(tablet ){
+  @include respond(tablet) {
     padding: 1rem 1rem;
   }
 }
@@ -32,7 +32,7 @@
       font-family: "Oleo Script", cursive;
 
       @include respond(mobile) {
-       font-size: 1.1rem;
+        font-size: 1.1rem;
       }
     }
 
@@ -71,7 +71,7 @@
 
     @include respond(tablet) {
       font-size: 1.2rem;
-    max-width: 85%;
+      max-width: 85%;
     }
 
     @include respond(mobile) {
@@ -160,7 +160,7 @@
 
     p {
       color: var(--gray-700);
-      padding: .7rem 0;
+      padding: 0.7rem 0;
       font-size: 1.2rem;
       font-weight: 400;
     }
@@ -188,9 +188,10 @@
     font-size: 1.5rem;
   }
 
+  opacity: 1;
+  bottom: 50px;
+
   &.show {
-    opacity: 1;
-    bottom: 50px;
   }
 
   button {
