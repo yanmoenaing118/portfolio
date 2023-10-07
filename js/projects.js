@@ -4,12 +4,12 @@ const projects = [
     projectName: "Yoma Bank - NextGen Banking Web Portal",
     projectLink: "https://nextportal.yomabank.com/",
     projectBrief: `
-    Yoma Bank's users will be able to access thier bank accounts' information and see their daily transactions. They can transfer money between Yoma Accounts, Other Accounts and Transfer to other Banks. They can easily open Fixed Deposit and Flexi Accounts without going to banks.
+    Yoma Bank's users will be able to access thier bank accounts' information and see their daily transactions.
     `,
     techBrief: `Angular, RxJS, BootStrap`,
     approaches: [
       `
-      I implemented core features such as Account Activation for new users, Transfer money between Yoma accounts / Other accounts ,Other Bank Transfers, Flexi Account Opening / Fixed Deposit - SuperFixed Deposit Account Opening
+      I developed core features such as Account Activation for new users, Transfer money between Yoma accounts / Other accounts ,Other Bank Transfers, Flexi Account Opening / Fixed Deposit - SuperFixed Deposit Account Opening
       `,
       `
       I implemented a multi-step dynamic form with different fields fetched from the API to accept payments for third party Billers such as YESC,Mahar Net,Mobile Legend, PUBG  etc…
@@ -24,9 +24,7 @@ const projects = [
     full range of home improvement products with installation, repair, and
     maintenance services that complement every product available on the
     platform.`,
-    techBrief: `The primary framework is NextJS because it gives the best developer
-    experience with all the features I need for production: hybrid static
-    & server rendering, and route pre-fetching.`,
+    techBrief: ``,
     approaches: [
       `Prerendering each pages for a better SEO`,
       `Combination of SSG and CSR to get a performanced hybrid application`,
@@ -117,7 +115,7 @@ ${project.techBrief}
     .map((item) => `<li>${item}</li>`)
     .join("");
 
-  let approaches = `<ul>${approachesList}</ul>`;
+  let approaches = `<ul style="padding-bottom:3rem">${approachesList}</ul>`;
 
   let template = `${button}<article>${logoEl}${headerEl}${projectBrief}${techBrief}${approaches}</article>`;
 

@@ -336,8 +336,8 @@ main {
 }
 .work-details article .project-logo img {
   background-color: #fff;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
 }
 .work-details article header {
