@@ -197,6 +197,7 @@ main {
 .workSwiper {
   position: relative;
   padding: 1rem 0;
+  padding-top: 2rem;
 }
 .workSwiper-slide {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
